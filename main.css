@@ -1,0 +1,322 @@
+/*---- GLOBAL ------*/
+
+body {
+	background: white;
+	font: 15px;
+	line-height: 1.4em;
+	padding: 0px;
+	margin: 0px;
+	color: #424242;
+	font-family: 'helvetica neue', helvetica, arial, sans-serif;
+	-webkit-font-smoothing: antialiased; 
+	text-rendering: optimizelegibility;
+}
+
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+#sticky {
+	width: 120px;
+	height: 120px;
+	padding-right: 20px;
+	display: inline-block;
+	background: #ebebeb;
+}
+
+.fixed {
+	position: fixed;
+}
+
+a {
+	color: #377DEA;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Ubuntu', 'helvetica neue', helvetica, arial, sans-serif;
+	font-weight: normal;
+	color: #598bd6;
+}
+
+h2 {
+	font-family: 'Ubuntu', 'helvetica neue', helvetica, arial, sans-serif;
+	font-weight: normal;
+}
+
+h3 {
+	font-family: 'Ubuntu', 'helvetica neue', helvetica, arial, sans-serif;
+	font-weight: normal;
+}
+
+.main {
+	width: 100%;
+	height: auto;
+	padding: 20px 0px;
+}
+
+.main-inner {
+	width: 940px;
+	padding: 20px;
+	min-height: 600px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+/*---- HEADER ------*/
+
+header {
+	width: 100%;
+	padding: 10px 0px;
+}
+
+.header-inner {
+	height: 30px;
+	width: 940px;
+	margin: 0 auto;
+	display: block;
+}
+
+.divider-full-width {
+	height: 4px;
+	width: 100%;
+	background-color: #fdfdfd;
+	border-top: 1px solid #ececec;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.03) ,inset 0px -1px 1px rgba(0,0,0,0.03);
+}
+
+
+/*---- FOOTER ------*/
+
+footer {
+	width: 100%;
+	padding: 0px 0px 20px 0px;
+	display: block;
+}
+
+.footer-inner {
+	height: 60px;
+	width: 940px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+.footer-divider {
+	width: 940px;
+	height: 8px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 0px;
+	position: relative;
+  	background-color: rgba(255,255,255,0.01);
+  	border-radius: 0%;
+}
+
+.footer-divider:after {
+	position: absolute;
+    width: 98%;
+    height: 50%;
+    left: 1%;
+    border-radius: 50%;
+    bottom: 10%;
+    content: "";
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.06);
+    z-index: -1;
+}
+
+.footer-divider-inner {
+	width: 940px;
+	width: 100%;
+	height: 1px;
+	display: block;
+	background: #f9f9f9;
+	background: -moz-linear-gradient(left, #f9f9f9 0%, #ececec 50%, #f9f9f9 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f9f9f9), color-stop(50%,#ececec), color-stop(100%,#f9f9f9));
+	background: -webkit-linear-gradient(left, #f9f9f9 0%,#ececec 50%,#f9f9f9 100%);
+	background: -o-linear-gradient(left, #f9f9f9 0%,#ececec 50%,#f9f9f9 100%);
+	background: -ms-linear-gradient(left, #f9f9f9 0%,#ececec 50%,#f9f9f9 100%);
+	background: linear-gradient(to right, #f9f9f9 0%,#ececec 50%,#f9f9f9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f9f9f9',GradientType=1 );
+	position: absolute;
+	bottom: 0px;
+	z-index: 5;
+}
+
+#first {
+	height: 120px;
+	display: block;
+}
+#second {
+	height: 120px;
+	display: block;
+}
+#third {
+	height: 120px;
+	display: block;
+}
+
+div.bar {
+    display: inline-block;
+    width: 30px;
+    height: 75px;   /* We'll override this later */
+    background-color: teal;
+    margin-right: 3px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/*----------- Example ---------------*/
+
+.ex-back {
+	height: 400px;
+	width: 100%;
+	background: #D6DCE2;
+	margin: 20px 0;
+	padding: 20px;
+}
+.idea {
+	height: 310px;
+	width: 200px;
+	display: block;
+	position: relative;
+	padding: 10px 15px 15px;
+	margin: 0 auto;
+	background: #f7f9fc; /* Old browsers */
+	background: -moz-linear-gradient(top, #f7f9fc 0%, #ebf1f7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f9fc), color-stop(100%,#ebf1f7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f7f9fc 0%,#ebf1f7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f7f9fc 0%,#ebf1f7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f7f9fc 0%,#ebf1f7 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f7f9fc 0%,#ebf1f7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f9fc', endColorstr='#ebf1f7',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #B5C1CA;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: rgba(0,0,0,0.1) 0 1px 5px, inset rgba(255,255,255,0.5) 0 1px 0, inset rgba(255,255,255,0.36) 1px 0 0, inset rgba(255,255,255,0.36) -1px 0 0;
+	   -moz-box-shadow: rgba(0,0,0,0.1) 0 1px 5px, inset rgba(255,255,255,0.5) 0 1px 0, inset rgba(255,255,255,0.36) 1px 0 0, inset rgba(255,255,255,0.36) -1px 0 0;
+	        box-shadow: rgba(0,0,0,0.1) 0 1px 5px, inset rgba(255,255,255,0.5) 0 1px 0, inset rgba(255,255,255,0.36) 1px 0 0, inset rgba(255,255,255,0.36) -1px 0 0;
+}
+.idea .poll-header {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	padding: 5px 0 10px;
+}
+.idea .poll-results {
+	display: block;
+	height: 200px;
+	width: 100%;
+	padding: 10px 0;
+}
+.idea .poll-results form {
+	display: block;
+	width: 100%;
+}
+.idea .poll-results form div.idea-options {
+	display: inline-block;
+	width: 93%;
+	padding-left: 7%;
+	margin-bottom: 15px;
+}
+.idea .poll-results form div.idea-options label {
+	margin-bottom: 5px;
+	font-size: 13px;
+}
+.idea .poll-results h4 {
+	font-size: 13px;
+	line-height: 16px;
+	display: block;
+	color: #9AA7AF;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.idea .poll-results #idea_id_poll_result {
+	margin: 0;
+	padding: 0;
+}
+button.poll {
+  display: block;
+  margin: 0 auto;
+  padding: 3px 10px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  color: #EDEFF4;
+  background: #475472; /* Old browsers */
+  background: -moz-linear-gradient(top, #606c88 0%, #34446B 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#606c88), color-stop(100%,#34446B)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #606c88 0%,#34446B 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #606c88 0%,#34446B 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #606c88 0%,#34446B 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #606c88 0%,#34446B 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#34446B',GradientType=0 ); /* IE6-9 */
+  border-width: 1px;
+  border-style: solid;
+  border-color: #475472 #35415E #34446B;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#B5C1CA', endColorstr='#94A1AA', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), inset rgba(255,255,255,0.12) 1px 0 0, inset rgba(255,255,255,0.12) -1px 0 0;
+     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), inset rgba(255,255,255,0.12) 1px 0 0, inset rgba(255,255,255,0.12) -1px 0 0;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), inset rgba(255,255,255,0.12) 1px 0 0, inset rgba(255,255,255,0.12) -1px 0 0;
+}
+button.poll:hover {
+	background: #475472;
+}
+.idea .poll-footer {
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	padding: 10px 0 0;
+	margin: 0 -15px;
+	border-top: 1px solid rgba(255,255,255,0.7);
+	-webkit-box-shadow: rgba(0,0,0,0.1) 0 -1px 0;
+	   -moz-box-shadow: rgba(0,0,0,0.1) 0 -1px 0;
+	        box-shadow: rgba(0,0,0,0.1) 0 -1px 0;
+
+}
+.idea .poll-header h3 {
+	text-align: center;
+	display: block;
+	color: #A5B1BA;
+	font-size: 16px;
+	line-height: 18px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.idea #innerPoll p {
+	font-size: 13px;
+	color: #717273;
+	padding: 4px 5px;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+	border-color: rgba(0,0,0,0.05) rgba(0,0,0,0.07) rgba(0,0,0,0.09);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 -1px 1px rgba(50,50,50,0.02), inset rgba(255,255,255,0.28) 1px 0 0, inset rgba(255,255,255,0.28) -1px 0 0;
+       -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 -1px 1px rgba(50,50,50,0.02), inset rgba(255,255,255,0.28) 1px 0 0, inset rgba(255,255,255,0.28) -1px 0 0;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 -1px 1px rgba(50,50,50,0.02), inset rgba(255,255,255,0.28) 1px 0 0, inset rgba(255,255,255,0.28) -1px 0 0;
+}
+.idea #innerPoll h4 {
+	font-size: 13px;
+	color: #85919A;
+	text-align: center;
+}
